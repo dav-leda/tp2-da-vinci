@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -17,35 +18,45 @@ body {
 
 
 
+
 /* Barra de navegacion */
 
 header.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #d04e59;
-  padding: 10px 20px;
-  padding: 2rem;
+  background: #ae222e;
+  padding: 1.4rem;
   position: sticky;
   top: 0;
 }
 
 header.navbar .nav-logo {
+  font-family: 'Cherry Bomb One', system-ui, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(239, 238, 244);
+
 }
 
 header.navbar .nav-links {
   display: flex;
-  gap: 20px;
 }
 
 header.navbar .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+
+
+
+header.navbar .nav-links a:hover {
+  color: black;
+  background-color: rgb(230, 211, 211);
 }
 
 header.navbar .hamburger {
@@ -86,6 +97,7 @@ header.navbar .dropdown a {
   flex-wrap: wrap;
   background: #ffdac1;
   justify-content: space-evenly;
+  padding-top: 2rem;
 }
 
 .hero-text {
@@ -94,9 +106,14 @@ header.navbar .dropdown a {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-family: 'Cherry Bomb One', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 4rem;
   text-transform: uppercase;
   white-space: pre-line;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: rgb(160, 32, 32);
+  
 }
 
 .hero-subtext {
@@ -121,21 +138,25 @@ header.navbar .dropdown a {
 /* Seccion Productos */
 
 .products-section {
-  background: #eae9f0;
+  background-color: indigo;
+  color: snow;
+
+  padding-bottom: 6rem;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
   max-width: 80%;
-  margin: auto;
   justify-content: center;
+  margin: 1rem auto;
 }
 
 .products-title {
   text-align: center;
   margin: auto;
   padding-top: 5rem;
+
   font-size: 2rem;
 } 
 
@@ -144,7 +165,7 @@ header.navbar .dropdown a {
   border-radius: 10px;
   width: 20rem;
   height: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: 2rem;
 }
@@ -263,6 +284,10 @@ footer {
     margin: 2rem auto;
     padding: 2rem;
   }
+
+  .hero-title {
+    font-size: 3rem;
+  }
 }
 
 
@@ -289,6 +314,10 @@ footer {
 
   .hero-text {
     margin: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
   }
 
   .hero-video {
