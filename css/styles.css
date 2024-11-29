@@ -95,6 +95,7 @@ header.navbar .dropdown a {
 .hero-title {
   font-size: 3rem;
   text-transform: uppercase;
+  white-space: pre-line;
 }
 
 .hero-subtext {
@@ -105,9 +106,7 @@ header.navbar .dropdown a {
   margin: 6rem auto;
 }
 
-
 .hero iframe {
-
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 20px;
@@ -122,7 +121,6 @@ header.navbar .dropdown a {
 
 .products-section {
   background: #eae9f0;
-
 }
 
 .products {
@@ -178,7 +176,7 @@ header.navbar .dropdown a {
 
 .contact-title {
   margin: 2rem;
-  text-decoration: underline;
+
   font-size: 2rem;
   font-weight: bold;
 }
@@ -206,13 +204,21 @@ header.navbar .dropdown a {
 .contact button {
   padding: 10px;
   border: none;
-  background: #a2464d;
+  background-color: #ae4d55;
   color: white;
   cursor: pointer;
   border-radius: 5px;
   font-size: 1.5rem;
 }
 
+.contact button:hover {
+  background-color: #9b3941;
+}
+
+.contact .message {
+  font-size: 1.5rem;
+  padding-bottom: 12rem;
+}
 
 
 /* Footer */
