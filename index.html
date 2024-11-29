@@ -106,24 +106,36 @@
         <h2 class="contact-title">Contactanos</h2>
 
         <form action="pages/message-received/" method="get">
-            <input 
-              type="text" 
-              placeholder="Su Nombre" 
-              autocomplete="false" 
-              required
-            >
-            <input 
-              type="email" 
-              placeholder="email@email.com" 
-              autocomplete="false" 
-              required
-            >
-            <textarea 
-              placeholder="Su mensaje" 
-              autocomplete="false" 
-              required
-            ></textarea>
-            <button type="submit">Enviar</button>
+          
+          <label for="nombre">Nombre y apellido:</label>
+          <input 
+            type="text"
+            name="nombre"
+            id="nombre" 
+            placeholder="Su Nombre" 
+            autocomplete="false" 
+            required
+          >
+
+          <label for="email">E-mail:</label>
+          <input 
+            type="email"
+            name="email"
+            id="email"  
+            placeholder="email@email.com" 
+            autocomplete="false" 
+            required
+          >
+
+          <label for="mensaje">Su mensaje:</label>
+          <textarea 
+            name="mensaje"
+            id="mensaje"  
+            autocomplete="false" 
+            required
+          ></textarea>
+          
+          <button type="submit">Enviar</button>
         </form>
 
     </section>

@@ -246,6 +246,7 @@ header.navbar .dropdown a {
   cursor: pointer;
   border-radius: 5px;
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 .contact button:hover {
@@ -255,6 +256,12 @@ header.navbar .dropdown a {
 .contact .message {
   font-size: 1.5rem;
   padding-bottom: 12rem;
+}
+
+.contact label {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 1.3rem;
 }
 
 
