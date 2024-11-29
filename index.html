@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helados Artesanales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-logo">Helados Artesanales</div>
+        <nav class="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#products">Productos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <a href="#home">Inicio</a>
+            <a href="#products">Productos</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1 class="hero-title">Helados</h1>
+            <h1 class="hero-title">Artesanales</h1>
+            <p class="hero-subtext">Los helados artesanales son helados de alta calidad que se elaboran con ingredientes frescos y naturales, siguiendo un proceso de elaboración cuidadoso y bajo estrictas normas de higiene.</p>
+        </div>
+
+        <div class="hero-video">
+          <iframe 
+            src="https://www.youtube.com/embed/AlmAWczZt-I?si=huXi2CHsZxBsxqIG&mute=1?autoplay=1"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+          ></iframe>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="products-section" id="products">
+        <h2 class="products-title">Nuestros Productos</h2>
+
+        <div class="products">
+
+   
+        <figure class="product">
+            <img src="img/helado-7.jpg" alt="Chocolate Truffles">
+            <figcaption>Helado Uno</figcaption>
+        </figure>
+        <figure class="product">
+            <img src="img/helado-13.jpg" alt="Caramel Fudge">
+            <figcaption>Helado Dos</figcaption>
+        </figure>
+        <figure class="product">
+            <img src="img/helado-12.jpg" alt="Macarons">
+            <figcaption>Helado Tres</figcaption>
+        </figure>
+        <figure class="product">
+            <img src="img/helado-3.jpg" alt="Cupcakes">
+            <figcaption>Helado Cuatro</figcaption>
+        </figure>
+        <figure class="product">
+            <img src="img/helado-5.jpg" alt="Candy Bars">
+            <figcaption>Helado Cinco</figcaption>
+        </figure>
+        <figure class="product">
+            <img src="img/helado-11.jpg" alt="Lollipops">
+            <figcaption>Helado Seis</figcaption>
+        </figure>
+            
+        </div>
+       
+    </section>
+
+    <!-- Formulario Contacto -->
+    <section class="contact" id="contact">
+        <h2 class="contact-title">Contactanos</h2>
+        <form>
+            <input type="text" placeholder="Su Nombre" required>
+            <input type="email" placeholder="email@email.com" required>
+            <textarea placeholder="Su mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Helados Artesanales</p>
+    </footer>
+</body>
+</html>
