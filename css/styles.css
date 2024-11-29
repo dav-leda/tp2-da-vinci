@@ -17,7 +17,7 @@ body {
 
 
 
-/* Nav Bar */
+/* Barra de navegacion */
 
 header.navbar {
   display: flex;
@@ -76,7 +76,10 @@ header.navbar .dropdown a {
   text-decoration: none;
 }
 
-/* Hero */
+
+
+/* Seccion Principal */
+
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -166,7 +169,7 @@ header.navbar .dropdown a {
 
 
 
-/* Formulario Contacto */
+/* Formulario de Contacto */
 .contact {
   padding: 6rem 2rem 10rem 2rem;
   background: #c7ceea;
@@ -223,18 +226,23 @@ footer {
 
 
 
-/* Responsive */
-@media (max-width: 768px) {
+
+
+/* Media Queries para responsive */
+
+/* Tablet */
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
   header.navbar .nav-links {
-      display: none;
+    display: none;
   }
 
   header.navbar .hamburger {
-      display: flex;
+    display: flex;
   }
 
   header.navbar .dropdown.active {
-      display: block;
+    display: block;
   }
 
   .hero iframe {
@@ -248,7 +256,41 @@ footer {
   
   .hero-text {
     margin: 2rem auto;
+    padding: 2rem;
+  }
+}
+
+
+
+/* Smartphone */
+
+@media screen and (max-width: 425px) {
+  header.navbar .nav-links {
+    display: none;
   }
 
+  header.navbar .hamburger {
+    display: flex;
+  }
 
+  header.navbar .dropdown.active {
+    display: block;
+  }
+
+  .hero iframe {
+    width: 300px;
+    height: 280px;
+  }
+
+  .hero-text {
+    margin: 2rem;
+  }
+
+  .hero-video {
+    margin: 1rem auto;
+  }
+  
+  .hero-text {
+    margin: 1rem auto;
+  }
 }

@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
+
 <body>
-    <!-- Navigation Bar -->
+
+    <!-- Barra de navegacion -->
+
     <header class="navbar">
         <div class="nav-logo">Helados Artesanales</div>
         <nav class="nav-links">
@@ -26,14 +29,11 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="dropdown" id="dropdown">
-            <a href="#home">Inicio</a>
-            <a href="#products">Productos</a>
-            <a href="#contact">Contacto</a>
-        </div>
     </header>
 
-    <!-- Hero Section -->
+
+    <!-- Seccion Presentacion -->
+
     <section class="hero" id="home">
 
         <div class="hero-text">
@@ -54,7 +54,9 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+
+    <!-- Seccion Productos -->
+
     <section class="products-section" id="products">
         <h2 class="products-title">Nuestros Productos</h2>
 
@@ -90,18 +92,36 @@
        
     </section>
 
-    <!-- Formulario Contacto -->
+
+    <!-- Formulario de Contacto -->
+
     <section class="contact" id="contact">
         <h2 class="contact-title">Contactanos</h2>
-        <form>
-            <input type="text" placeholder="Su Nombre" required>
-            <input type="email" placeholder="email@email.com" required>
-            <textarea placeholder="Su mensaje" required></textarea>
+
+        <form action="pages/message-received/" method="get">
+            <input 
+              type="text" 
+              placeholder="Su Nombre" 
+              autocomplete="false" 
+              required
+            >
+            <input 
+              type="email" 
+              placeholder="email@email.com" 
+              autocomplete="false" 
+              required
+            >
+            <textarea 
+              placeholder="Su mensaje" 
+              autocomplete="false" 
+              required
+            ></textarea>
             <button type="submit">Enviar</button>
         </form>
+
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer-->
     <footer>
         <p>&copy; 2024 Helados Artesanales</p>
     </footer>
