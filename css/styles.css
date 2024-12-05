@@ -7,7 +7,6 @@
 }
 
 
-
 body {
   font-family: "Delius Swash Caps", cursive;
   font-weight: 400;
@@ -25,7 +24,7 @@ header.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: darkred;
+  background: darkblue;
   padding: 1.4rem;
   position: sticky;
   top: 0;
@@ -35,6 +34,7 @@ header.navbar {
 header.navbar .nav-logo {
   font-family: 'Cherry Bomb One', system-ui, sans-serif;
   font-size: 1.5rem;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   color: snow;
 
@@ -51,14 +51,14 @@ header.navbar .nav-links a {
   margin-right: 2rem;
   padding: 0.4rem 1rem;
   border-radius: 5px;
+
+  &:hover {
+    color: black;
+    background-color: rgb(230, 211, 211);
+  }
 }
 
 
-
-header.navbar .nav-links a:hover {
-  color: black;
-  background-color: rgb(230, 211, 211);
-}
 
 header.navbar .hamburger {
   display: none;
@@ -98,7 +98,7 @@ header.navbar .dropdown a {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(to top, darkorange 0%, darkred 100%);
+  background: linear-gradient(to bottom, darkblue 0%, lightblue 100%);
   justify-content: space-evenly;
   padding-top: 2rem;
 }
@@ -111,6 +111,7 @@ header.navbar .dropdown a {
 .hero-title {
   font-family: 'Cherry Bomb One', system-ui, sans-serif;
   font-size: 4rem;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   white-space: pre-line;
   line-height: 1;
@@ -176,6 +177,10 @@ header.navbar .dropdown a {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .products .product img {
@@ -186,9 +191,6 @@ header.navbar .dropdown a {
   
 }
 
-.products .product:hover {
-  transform: scale(1.1);
-}
 
 .products .product figcaption {
   margin-top: 2rem;
@@ -205,12 +207,12 @@ header.navbar .dropdown a {
 /* Formulario de Contacto */
 
 .contact {
-  z-index: 2;
-  padding: 4rem 2rem 10rem 2rem;
   background: indigo;
   color: snow;
   text-align: center;
+  padding: 2rem 2rem 10rem 2rem;
 }
+
 
 .contact-title {
   margin: 2rem;
