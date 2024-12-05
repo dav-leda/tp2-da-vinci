@@ -6,15 +6,12 @@
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: "Delius Swash Caps", cursive;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
 }
-
-
 
 
 
@@ -31,7 +28,7 @@ header.navbar {
   z-index: 1;
 }
 
-header.navbar .nav-logo {
+header.navbar > .nav-logo {
   font-family: 'Cherry Bomb One', system-ui, sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -40,11 +37,11 @@ header.navbar .nav-logo {
 
 }
 
-header.navbar .nav-links {
+header.navbar > .nav-links {
   display: flex;
 }
 
-header.navbar .nav-links a {
+header.navbar > .nav-links a {
   color: snow;
   text-decoration: none;
   font-size: 1.2rem;
@@ -58,35 +55,44 @@ header.navbar .nav-links a {
   }
 }
 
-
-
-header.navbar .hamburger {
+header.navbar > .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+
+  &:hover + .dropdown {
+    height: 180px;
+  }
 }
 
-header.navbar .hamburger .line {
+header.navbar > .dropdown {
+  height: 0px;
+  position: absolute;
+  overflow: hidden;
+  top: 5rem;
+  left: 0;
+  background-color: slateblue;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+header.navbar > .hamburger > .line {
   width: 25px;
   height: 3px;
   background: white;
 }
 
-header.navbar .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 20px;
-  background: #ff9aa2;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
-header.navbar .dropdown a {
+header.navbar > .dropdown > a {
   display: block;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   color: snow;
   text-decoration: none;
+
+  &:hover {
+    background-color: darkslateblue;
+  }
 }
 
 
@@ -230,8 +236,7 @@ header.navbar .dropdown a {
 }
 
 .contact input, .contact textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -243,17 +248,20 @@ header.navbar .dropdown a {
 .contact button {
   padding: 10px;
   border: none;
-  background-color: #ae4d55;
-  color: white;
+  background-color: rgb(52, 168, 94);
+  color: snow;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   margin-top: 2rem;
+
+  &:hover {
+    background-color: rgb(42, 152, 80);
+  }
 }
 
-.contact button:hover {
-  background-color: #9b3941;
-}
 
 .contact .message {
   font-size: 1.5rem;
